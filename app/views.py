@@ -25,7 +25,7 @@ class SignupView(ModelViewSet):
 class LoginView(ObtainAuthToken):
     renderer_classes=api_settings.DEFAULT_RENDERER_CLASSES
 
-class UserView(ModelViewSet):
+class StudentView(ModelViewSet):
     authentication_classes=[TokenAuthentication]
     permission_classes=[IsAuthenticated]
     http_method_names=['get']

@@ -5,7 +5,7 @@ router = DefaultRouter()
 router.register('books', views.AdminBookView)
 router.register('Category', views.CategoryView)
 router.register('Signup', views.SignupView,basename='test')
-router.register('students', views.UserView)
+router.register('students', views.StudentView)
 
 
 urlpatterns = [
